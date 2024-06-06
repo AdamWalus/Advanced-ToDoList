@@ -78,7 +78,7 @@ function TodoList() {
           <div className="navbar-content max-w-[1200px]">
             <div className="navbar-flex">
             <div className="navbar-links">
-                <Link to="/" className="navbar-link">Todo App</Link>
+                <Link to="/home" className="navbar-link">Todo App</Link>
               </div>
               <div className="navbar-links">
                 <Link to="/about" className="navbar-link">O nas</Link>
