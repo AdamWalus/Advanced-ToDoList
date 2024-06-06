@@ -90,7 +90,7 @@ function TodoList() {
         
         <div className="w-full p-4 max-w-[500px] mx-auto">
           <Routes>
-            <Route path="/" element={<TodoListComponent todos={todos} handleSubmit={handleSubmit} setInputValue={setInputValue} handleStatus={handleStatus} handleDelete={handleDelete} dailyTasks={dailyTasks} inputValue={inputValue} />} />
+            <Route path="/home" element={<TodoListComponent todos={todos} handleSubmit={handleSubmit} setInputValue={setInputValue} handleStatus={handleStatus} handleDelete={handleDelete} dailyTasks={dailyTasks} inputValue={inputValue} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

@@ -1,6 +1,7 @@
 {
   "name": "todolista",
   "version": "0.1.0",
+  "homepage":"https://adamwalus.github.io/Advanced-ToDoList/",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -23,14 +24,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"npm run server\" \"react-scripts start\" \"npm run api\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
-    "api": "node src/Api/server.js",
-    "deploy": "gh-pages -d dist"
+    "api": "node src/Api/server.js"
 
   },
   "eslintConfig": {
