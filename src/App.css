@@ -55,3 +55,61 @@ body{
 .btn-no-line-through {
   text-decoration: none;
 }
+
+
+
+.content {
+  margin-top: 4rem; 
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.navbar-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-link {
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-flex {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap:0;
+  }
+}
+
